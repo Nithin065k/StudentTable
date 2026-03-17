@@ -1,0 +1,34 @@
+.wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 20px;
+  border-top: 1px solid #e2e6f3;
+  flex-wrap: wrap; gap: 12px;
+  background: #f4f6fb;
+  border-radius: 0 0 14px 14px;
+}
+.info { display: flex; align-items: center; gap: 6px; }
+.range { font-family: 'DM Mono', monospace; font-size: 13px; color: #4a5070; font-weight: 500; }
+.of    { font-family: 'DM Mono', monospace; font-size: 13px; color: #8892b0; }
+.controls { display: flex; align-items: center; gap: 4px; }
+.pageBtn {
+  min-width: 32px; height: 32px; padding: 0 8px;
+  border-radius: 8px; border: 1px solid #e2e6f3;
+  background: #fff; color: #4a5070;
+  font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 600;
+  cursor: pointer; transition: all 0.15s; outline: none;
+}
+.pageBtn:hover { background: #f0f2f8; color: #0f1124; border-color: #c8cee6; }
+.active {
+  background: #4f46e5 !important; color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: 0 2px 8px rgba(79,70,229,0.3);
+}
+.navBtn {
+  width: 32px; height: 32px; border-radius: 8px;
+  border: 1px solid #e2e6f3; background: #fff; color: #4a5070;
+  font-size: 14px; cursor: pointer; transition: all 0.15s;
+  display: flex; align-items: center; justify-content: center; outline: none;
+}
+.navBtn:hover:not(:disabled) { background: #f0f2f8; color: #0f1124; border-color: #c8cee6; }
+.navBtn:disabled { opacity: 0.3; cursor: not-allowed; }
+.ellipsis { font-size: 13px; color: #8892b0; padding: 0 4px; line-height: 32px; }
